@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Ejercicio2
 {
-    public partial class Form1 : Form
+    public partial class RegistrarEmpleado : Form
     {
-        public Form1()
+        public RegistrarEmpleado()
         {
             InitializeComponent();
         }
 
-        private void btnGenerarLiqui_Click(object sender, EventArgs e)
+        private void RegistrarEmpleado_Load(object sender, EventArgs e)
         {
 
         }
