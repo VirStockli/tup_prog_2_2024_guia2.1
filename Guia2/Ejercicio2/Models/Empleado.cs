@@ -15,9 +15,9 @@ namespace Ejercicio2.Models
         { get { return $"{Apellido}, {Nombre}"; } private set { } }
         public int AñoContrato { get; private set; }
 
-        public double MontoBasicoNominal { get; set; }
-        public int HorasExtras50 { get; set; }
-        public int HorasExtras100 { get; set; }
+        public double MontoBasicoNominal { get;}
+        public int HorasExtras50 { get; }
+        public int HorasExtras100 { get; }
 
         public Empleado (int dni, string apellido, string nombre, int añoContratado)
         {
