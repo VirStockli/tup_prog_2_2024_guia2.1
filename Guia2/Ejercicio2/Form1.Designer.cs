@@ -28,19 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbxMostrar = new System.Windows.Forms.ListBox();
             this.btnRegistro = new System.Windows.Forms.Button();
             this.btnGenerarLiqui = new System.Windows.Forms.Button();
             this.btnMostrarLiqui = new System.Windows.Forms.Button();
+            this.tbVer = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // lbxMostrar
-            // 
-            this.lbxMostrar.FormattingEnabled = true;
-            this.lbxMostrar.Location = new System.Drawing.Point(12, 81);
-            this.lbxMostrar.Name = "lbxMostrar";
-            this.lbxMostrar.Size = new System.Drawing.Size(420, 225);
-            this.lbxMostrar.TabIndex = 0;
             // 
             // btnRegistro
             // 
@@ -50,6 +42,7 @@
             this.btnRegistro.TabIndex = 3;
             this.btnRegistro.Text = "Registrar Empleado";
             this.btnRegistro.UseVisualStyleBackColor = true;
+            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
             // 
             // btnGenerarLiqui
             // 
@@ -69,28 +62,37 @@
             this.btnMostrarLiqui.TabIndex = 5;
             this.btnMostrarLiqui.Text = "Mostrar Liquidaciones";
             this.btnMostrarLiqui.UseVisualStyleBackColor = true;
+            this.btnMostrarLiqui.Click += new System.EventHandler(this.btnMostrarLiqui_Click);
+            // 
+            // tbVer
+            // 
+            this.tbVer.Location = new System.Drawing.Point(12, 80);
+            this.tbVer.Multiline = true;
+            this.tbVer.Name = "tbVer";
+            this.tbVer.Size = new System.Drawing.Size(420, 226);
+            this.tbVer.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(446, 318);
+            this.Controls.Add(this.tbVer);
             this.Controls.Add(this.btnMostrarLiqui);
             this.Controls.Add(this.btnGenerarLiqui);
             this.Controls.Add(this.btnRegistro);
-            this.Controls.Add(this.lbxMostrar);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        public System.Windows.Forms.ListBox lbxMostrar;
         public System.Windows.Forms.Button btnRegistro;
         public System.Windows.Forms.Button btnGenerarLiqui;
         public System.Windows.Forms.Button btnMostrarLiqui;
+        public System.Windows.Forms.TextBox tbVer;
     }
 }
 

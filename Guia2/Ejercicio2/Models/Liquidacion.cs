@@ -50,7 +50,7 @@ namespace Ejercicio2.Models
                 return MontoBasico + MontoAntiguedad+MontoExtras50 + MontoExtras100;
             }
         }
-        public double PorcObraSocial { get; }
+        public double PorcObraSocial { get; set; }
         public double MontoObraSocial { get { return Nominal * 3d / 100; } }
         public double PorcJubilacion { get; set; }
         public double MontoJubilacion { get {return PorcJubilacion * 18d / 100;}        }
@@ -93,19 +93,19 @@ namespace Ejercicio2.Models
             string recibodesueldo = $@"
             Empleado {Empleado.ApellidoNombre}
             {"-".PadRight(70, '-')}
-            {"Concepto",30}{"Haberes",20}{"Descuentos",20}
-            {"Básico",30}{MontoBasico,20:f2}{" ",20}
-            Antigüedad({PorcAntiguedad}){30}{MontoAntiguedad,20:f2}{" ",20}
-            Extras al 50%({HorasExtras50}){30}{MontoExtras50,20:f2}{" ",20}
-            Extras al 100% ({HorasExtras100}){MontoExtras100,20:f2}{" ",20}
-            Obra Social ({PorcObraSocial}){30}{" ",20}{MontoObraSocial,20:f2}
-            Jubilación ({PorcJubilacion}){30}{" ",20}{MontoJubilacion,20:f2}
-            Ap. Gremiales({PorcGremial}){30}{" ",20}{MontoGremial,20:f2}
-            {"Productividad",30}{Productividad,20}{" ",20}
+            Concepto {"Haberes",23}{"Descuentos",20}
+            Básico {MontoBasico,29:f2}{" ",20}
+            Antigüedad({PorcAntiguedad}){MontoAntiguedad,17:f2}{" ",20}
+            Extras al 50%({HorasExtras50}){MontoExtras50,16:f2}{" ",20}
+            Extras al 100% ({HorasExtras100}){MontoExtras100,13:f2}{" ",20}
+            Obra Social ({PorcObraSocial}){" ",20}{MontoObraSocial,20:f2}
+            Jubilación ({PorcJubilacion}){" ",20}{MontoJubilacion,21:f2}
+            Ap. Gremiales({PorcGremial}){" ",20}{MontoGremial,15:f2}
+            Productividad{Productividad,18}
             {"-".PadRight(70, '-')}
-            {"Totales",30}     {Neto + Productividad,20:f2}{"",20}
+            {"Totales",30}     {Neto + Productividad,25:f2}{"",20}
             {"-".PadRight(70, '-')}
-            {"",30}{"A Cobrar",20}{ACobrar,20:f2}
+            {"A Cobrar",30}{ACobrar,29:f2}
             ";
 
             return recibodesueldo;

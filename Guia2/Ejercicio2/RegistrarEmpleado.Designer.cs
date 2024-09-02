@@ -41,7 +41,7 @@
             // lApellido
             // 
             this.lApellido.AutoSize = true;
-            this.lApellido.Location = new System.Drawing.Point(22, 21);
+            this.lApellido.Location = new System.Drawing.Point(26, 21);
             this.lApellido.Name = "lApellido";
             this.lApellido.Size = new System.Drawing.Size(44, 13);
             this.lApellido.TabIndex = 0;
@@ -50,7 +50,7 @@
             // lNombre
             // 
             this.lNombre.AutoSize = true;
-            this.lNombre.Location = new System.Drawing.Point(22, 47);
+            this.lNombre.Location = new System.Drawing.Point(26, 47);
             this.lNombre.Name = "lNombre";
             this.lNombre.Size = new System.Drawing.Size(44, 13);
             this.lNombre.TabIndex = 1;
@@ -72,6 +72,7 @@
             // 
             // btnAgregar
             // 
+            this.btnAgregar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnAgregar.Location = new System.Drawing.Point(25, 110);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
@@ -98,7 +99,7 @@
             // lDNI
             // 
             this.lDNI.AutoSize = true;
-            this.lDNI.Location = new System.Drawing.Point(40, 76);
+            this.lDNI.Location = new System.Drawing.Point(43, 76);
             this.lDNI.Name = "lDNI";
             this.lDNI.Size = new System.Drawing.Size(26, 13);
             this.lDNI.TabIndex = 6;
